@@ -11,9 +11,12 @@ This repository provides the source codes of the MsvNet for both single and mult
 ### Single feature recognition
 
 1. Prerequisites: python 3.+, pytorch, torchvision, numpy, cupy, 
-2. Download the FeatureNet [dataset](https://github.com/madlabub/Machining-feature-dataset), and convert them into voxel models via binvox
+2. Download the FeatureNet [dataset](https://github.com/madlabub/Machining-feature-dataset), convert them into voxel models via [binvox](https://www.patrickmin.com/binvox/), and put them in the folder `data\64\`
 3. Get the MsvNet source code by cloning the repository: `git clone https://github.com/PeizhiShi/MsvNet.git`
 4. Run `single.py`
 
 
-### Multi-feature recognition
+### Benchmark dataset for multi-feature recognition
+
+1. Prerequisites: python 3.+, 
+2. Download the 
