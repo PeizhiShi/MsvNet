@@ -9,7 +9,9 @@ The MsvNet is a novel learning-based feature recognition method using multiple s
 ### Single feature recognition
 
 1. Prerequisites: python 3.+, pytorch, torchvision, numpy, cupy, 
-2. Download the FeatureNet dataset, and convert them into voxel models via binvox
-3. Run single.py
+2. Download the FeatureNet [dataset](https://github.com/madlabub/Machining-feature-dataset), and convert them into voxel models via binvox
+3. Get the MsvNet source code by cloning the repository: `git clone https://github.com/PeizhiShi/MsvNet.git`
+4. Run `single.py`
+
 
 ### Multi-feature recognition
