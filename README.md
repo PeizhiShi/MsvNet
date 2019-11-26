@@ -9,5 +9,5 @@ The MsvNet is a novel learning-based feature recognition method using multiple s
 ### Single feature recognition
 
 1. **Prerequisites**
-  1. dd
-  2. tt
+1. dd
+2. tt
