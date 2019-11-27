@@ -1,5 +1,5 @@
 ## MsvNet
-Created by Peizhi Shi at University of Huddersfield
+Created by Peizhi Shi (p.shi@hud.ac.uk) at University of Huddersfield
 
 Acknowledgements: We would like to thank Zhibo Zhang for providing the dataset and source code of FeatureNet on Github. 
 
@@ -12,7 +12,7 @@ This repository provides the source codes of the MsvNet for both single and mult
 
 ### Single feature recognition
 
-1. Prerequisites: python 3.+, pytorch, torchvision, numpy, cupy, 
+1. Prerequisites: python 3.+, pytorch, torchvision, numpy, cupy, scipy, PIL
 2. Get the MsvNet source code by cloning the repository: `git clone https://github.com/PeizhiShi/MsvNet.git`.
 3. Download the FeatureNet [dataset](https://github.com/madlabub/Machining-feature-dataset), convert them into voxel models via [binvox](https://www.patrickmin.com/binvox/), and put them in the folder `data\64\`.
 4. Run `python single_train.py` to train the neural network. Please note that data augmentation is employed in this experiment. Thus, the training accuracy is lower than the val/test accuracy.
@@ -20,7 +20,7 @@ This repository provides the source codes of the MsvNet for both single and mult
 
 ### Benchmark dataset for multi-feature recognition
 
-1. Prerequisites: python 3.+, 
+1. Prerequisites: python 3.+, csv, pyvista
 2. Get the MsvNet source code by cloning the repository: `git clone https://github.com/PeizhiShi/MsvNet.git`.
 3. Download the benchmark multi-feature [dataset], and put them in the folder `data\`.
 4. Run `python visualize.py` to visualize a 3D model in this dataset.
@@ -28,7 +28,7 @@ This repository provides the source codes of the MsvNet for both single and mult
 
 ### Multi-feature recognition
 
-1. Prerequisites: python 3.+, [selective search](https://github.com/AlpacaDB/selectivesearch), tensorflow, pytorch, torchvision
+1. Prerequisites: python 3.+, [selective search](https://github.com/AlpacaDB/selectivesearch), tensorflow, pytorch, torchvision, skimage, scipy, PIL 
 2. Get the MsvNet source code by cloning the repository: `git clone https://github.com/PeizhiShi/MsvNet.git`.
 3. Download the benchmark multi-feature [dataset], and put them in the folder `data\`.
 4. Download the pretrained MsvNet and FeatureNet [models], and put them int the folder `models\`. These models could produce the multi-feature recognition results reported in the paper.
