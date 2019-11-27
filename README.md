@@ -23,7 +23,7 @@ This repository provides the source codes of the MsvNet for both single and mult
 1. Prerequisites: python 3.+, 
 2. Get the MsvNet source code by cloning the repository: `git clone https://github.com/PeizhiShi/MsvNet.git`.
 3. Download the benchmark multi-feature [dataset], and put them in the folder `data\`.
-4. Run `python visualize.py` to visualize a 3D model with multiple features.
+4. Run `python visualize.py -m 123` to visualize the 123rd model in this dataset.
 
 
 ### Multi-feature recognition
