@@ -1,5 +1,5 @@
 ## MsvNet
-Created by Peizhi Shi (p.shi@hud.ac.uk) at University of Huddersfield
+Created by Peizhi Shi at University of Huddersfield
 
 Acknowledgements: We would like to thank Zhibo Zhang for providing the dataset and source code of FeatureNet on Github. 
 
@@ -34,3 +34,5 @@ This repository provides the source codes of the MsvNet for both single and mult
 4. Download the pretrained MsvNet and FeatureNet [models], and put them int the folder `models\`. These models could produce the multi-feature recognition results reported in the paper.
 5. Run `python test_msv.py` to test the performances of the MsvNet for multi-feature recognition.
 6. Run `python test_featurenet.py` to test the performances of the FeatureNet for multi-feature recognition. Please note that this is only a reimplemented version of the FeatureNet for multi-feature recognition. Detailed information can be found from their [original paper](https://doi.org/10.1016/j.cad.2018.03.006).
+
+If you have any questions about the code, please feel free to contact me (p.shi@hud.ac.uk).
