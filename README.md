@@ -15,7 +15,7 @@ This repository provides the source codes of the MsvNet for both single and mult
 1. Prerequisites: python 3.+, pytorch, torchvision, numpy, cupy, 
 2. Get the MsvNet source code by cloning the repository: `git clone https://github.com/PeizhiShi/MsvNet.git`.
 3. Download the FeatureNet [dataset](https://github.com/madlabub/Machining-feature-dataset), convert them into voxel models via [binvox](https://www.patrickmin.com/binvox/), and put them in the folder `data\64\`.
-4. Run `python single_train.py` to train the neural network.
+4. Run `python single_train.py` to train the neural network. Please note that data augmentation is employed in this experiment. Thus, the training accuracy is lower than the val/test accuracy.
 
 
 ### Benchmark dataset for multi-feature recognition
@@ -23,14 +23,14 @@ This repository provides the source codes of the MsvNet for both single and mult
 1. Prerequisites: python 3.+, 
 2. Get the MsvNet source code by cloning the repository: `git clone https://github.com/PeizhiShi/MsvNet.git`.
 3. Download the benchmark multi-feature [dataset], and put them in the folder `data\`.
-4. Run `python visualize.py -m 123` to visualize the 123rd model in this dataset.
+4. Run `python visualize.py` to visualize a 3D model in this dataset.
 
 
 ### Multi-feature recognition
 
-1. Prerequisites: python 3.+, [selective search](https://github.com/AlpacaDB/selectivesearch)
+1. Prerequisites: python 3.+, [selective search](https://github.com/AlpacaDB/selectivesearch), tensorflow, pytorch, torchvision
 2. Get the MsvNet source code by cloning the repository: `git clone https://github.com/PeizhiShi/MsvNet.git`.
 3. Download the benchmark multi-feature [dataset], and put them in the folder `data\`.
 4. Download the pretrained MsvNet and FeatureNet [models], and put them int the folder `models\`. These models could produce the multi-feature recognition results reported in the paper.
-5. Run `python multi_test.py -m MsvNet -d 5` to test the performances of the MsvNet for multi-feature recognition on data group 5.
-6. Run `python multi_test.py -m FeatureNet -d 6` to test the performances of the FeatureNet for multi-feature recognition on data group 6. Please note that this is only a reimplemented version of the FeatureNet for multi-feature recognition. Detailed information can be found from their [original paper](https://doi.org/10.1016/j.cad.2018.03.006).
+5. Run `python test_msv.py` to test the performances of the MsvNet for multi-feature recognition.
+6. Run `python test_featurenet.py` to test the performances of the FeatureNet for multi-feature recognition. Please note that this is only a reimplemented version of the FeatureNet for multi-feature recognition. Detailed information can be found from their [original paper](https://doi.org/10.1016/j.cad.2018.03.006).
