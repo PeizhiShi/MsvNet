@@ -28,7 +28,7 @@ This repository provides the source codes of the MsvNet for both single and mult
 
 ### Multi-feature recognition
 
-1. Prerequisites: python 3.+, [selective search](https://github.com/AlpacaDB/selectivesearch), numpy,cupy,tensorflow, pytorch, torchvision, skimage, scipy, PIL 
+1. Prerequisites: python 3.+, [selective search](https://github.com/AlpacaDB/selectivesearch), numpy, cupy, tensorflow, pytorch, torchvision, skimage, scipy, PIL 
 2. Get the MsvNet source code by cloning the repository: `git clone https://github.com/PeizhiShi/MsvNet.git`.
 3. Download the benchmark multi-feature [dataset], and put them in the folder `data\`.
 4. Download the pretrained MsvNet and FeatureNet [models], and put them int the folder `models\`. These models could produce the multi-feature recognition results reported in the paper.
