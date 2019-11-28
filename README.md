@@ -14,7 +14,7 @@ This repository provides the source codes of the MsvNet for both single and mult
 
 1. Prerequisites: python 3.+, pytorch, torchvision, numpy, cupy, scipy, PIL
 2. Get the MsvNet source code by cloning the repository: `git clone https://github.com/PeizhiShi/MsvNet.git`.
-3. Download the FeatureNet [dataset](https://github.com/madlabub/Machining-feature-dataset), convert them into voxel models via [binvox](https://www.patrickmin.com/binvox/), and put them in the folder `data\64\`.
+3. Download the FeatureNet [dataset](https://github.com/madlabub/Machining-feature-dataset), convert them into voxel models via [binvox](https://www.patrickmin.com/binvox/), and put them in the folder `data\64\`. `64` refers to the resolution of the voxel models.
 4. Run `python single_train.py` to train the neural network. Please note that data augmentation is employed in this experiment. Thus, the training accuracy is lower than the val/test accuracy.
 
 
