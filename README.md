@@ -9,7 +9,7 @@ The MsvNet is a novel learning-based feature recognition method using multiple s
 
 This repository provides the source codes of the MsvNet for both single and multi-feature recognition, a reimplemented version of the FeatureNet for multi-feature recognition, and a benchmark dataset which contains 1000 3D models with multiple features.
 
-All the experiments mentioned in our paper are conducted on Ubuntu 18.04. If you run the code on the Windows, a slightly different result will be achieved.
+All the experiments mentioned in our paper are conducted on Ubuntu 18.04 under the following settings. If you run the code on the Windows or under different settings, slightly different results might be achieved.
 
 
 ### Single feature recognition
