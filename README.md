@@ -24,7 +24,7 @@ All the experiments mentioned in our paper are conducted on Ubuntu 18.04 under t
 
 1. Prerequisites: python 3.+, csv, pyvista
 2. Get the MsvNet source code by cloning the repository: `git clone https://github.com/PeizhiShi/MsvNet.git`.
-3. Download the benchmark multi-feature [dataset], and put them in the folder `data\`.
+3. Download the benchmark multi-feature [dataset](https://1drv.ms/u/s!At5UoWCCWHUKafomIKnOJnsl0Dg?e=lbK8iw), and put them in the folder `data\`.
 4. Run `python visualize.py` to visualize a 3D model in this dataset.
 
 
@@ -34,6 +34,6 @@ All the experiments mentioned in our paper are conducted on Ubuntu 18.04 under t
 2. Get the MsvNet source code by cloning the repository: `git clone https://github.com/PeizhiShi/MsvNet.git`.
 3. Download the benchmark multi-feature [dataset](https://1drv.ms/u/s!At5UoWCCWHUKafomIKnOJnsl0Dg?e=lbK8iw), and put them in the folder `data\`.
 4. Download the pretrained optimal MsvNet and FeatureNet [models](https://1drv.ms/u/s!At5UoWCCWHUKaM5mfNTkvL1tl_c?e=OHVMBR), and put them int the folder `models\`. These models could produce the multi-feature recognition results reported in the paper.
-5. Run `python multi_test.py` to test the performances of the MsvNet and FeatureNet for multi-feature recognition. Please note that the multi-feature recognition part of the FeatureNet is only a reimplemented version. Detailed information about the FeatureNet can be found from their [original paper](https://doi.org/10.1016/j.cad.2018.03.006).
+5. Run `python multi_test.py` to test the performances of the MsvNet and FeatureNet for multi-feature recognition. Please note that the multi-feature recognition part of the FeatureNet is only a reimplemented version. Watershed algorithm with the default setting is employed. Detailed information about the FeatureNet can be found from their [original paper](https://doi.org/10.1016/j.cad.2018.03.006).
 
 If you have any questions about the code, please feel free to contact me (p.shi@hud.ac.uk).
