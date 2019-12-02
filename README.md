@@ -9,47 +9,49 @@ The MsvNet is a novel learning-based feature recognition method using multiple s
 
 This repository provides the source codes of the MsvNet for both single and multi-feature recognition, a reimplemented version of the FeatureNet for multi-feature recognition, and a benchmark dataset which contains 1000 3D models with multiple features.
 
+
+### Experimental settings
+
 All the experiments mentioned in our paper are conducted on Ubuntu 18.04 under the following experimental settings:
-`CUDA (10.0.130), 
-cupy-cuda100 (6.2.0),
-image (1.5.27),
-numpy (1.17.4),
-numpy-stl (2.10.1),
-Pillow (6.2.1),
-python (3.6.8),
-pyvista (0.22.4),
-scikit-image (0.16.2),
-scipy (1.3.3),
-selectivesearch (0.4),
-tensorflow-estimator (1.14.0),
-tensorflow-gpu (1.14.0),
-torch (1.1.0),
-torchvision (0.3.0).`
+
+1. CUDA (10.0.130)
+2. cupy-cuda100 (6.2.0)
+3. image (1.5.27)
+4. numpy (1.17.4)
+5. numpy-stl (2.10.1)
+6. Pillow (6.2.1)
+7. python (3.6.8)
+8. pyvista (0.22.4)
+9. scikit-image (0.16.2)
+10. scipy (1.3.3)
+11. selectivesearch (0.4)
+12. tensorflow-estimator (1.14.0)
+13. tensorflow-gpu (1.14.0)
+14. torch (1.1.0)
+15. torchvision (0.3.0)
+
 If you run the code on the Windows or under different settings, slightly different results might be achieved.
 
 
 ### Single feature recognition
 
-1. Prerequisites: python 3.+, pytorch, torchvision, numpy, cupy, scipy, PIL
-2. Get the MsvNet source code by cloning the repository: `git clone https://github.com/PeizhiShi/MsvNet.git`.
-3. Download the FeatureNet [dataset](https://github.com/madlabub/Machining-feature-dataset), convert them into voxel models via [binvox](https://www.patrickmin.com/binvox/), and put them in the folder `data\64\`. `64` refers to the resolution of the voxel models.
-4. Run `python single_train.py` to train the neural network. Please note that data augmentation is employed in this experiment. Thus, the training accuracy is lower than the val/test accuracy.
+1. Get the MsvNet source code by cloning the repository: `git clone https://github.com/PeizhiShi/MsvNet.git`.
+2. Download the FeatureNet [dataset](https://github.com/madlabub/Machining-feature-dataset), convert them into voxel models via [binvox](https://www.patrickmin.com/binvox/), and put them in the folder `data\64\`. `64` refers to the resolution of the voxel models.
+3. Run `python single_train.py` to train the neural network. Please note that data augmentation is employed in this experiment. Thus, the training accuracy is lower than the val/test accuracy.
 
 
 ### Benchmark dataset for multi-feature recognition
 
-1. Prerequisites: python 3.+, csv, pyvista
-2. Get the MsvNet source code by cloning the repository: `git clone https://github.com/PeizhiShi/MsvNet.git`.
-3. Download the benchmark multi-feature [dataset](https://1drv.ms/u/s!At5UoWCCWHUKafomIKnOJnsl0Dg?e=lbK8iw), and put them in the folder `data\`.
-4. Run `python visualize.py` to visualize a 3D model in this dataset.
+1. Get the MsvNet source code by cloning the repository: `git clone https://github.com/PeizhiShi/MsvNet.git`.
+2. Download the benchmark multi-feature [dataset](https://1drv.ms/u/s!At5UoWCCWHUKafomIKnOJnsl0Dg?e=lbK8iw), and put them in the folder `data\`.
+3. Run `python visualize.py` to visualize a 3D model in this dataset.
 
 
 ### Multi-feature recognition
 
-1. Prerequisites: python 3.+, [selective search](https://github.com/AlpacaDB/selectivesearch), numpy, cupy, tensorflow, pytorch, torchvision, skimage, scipy, PIL 
-2. Get the MsvNet source code by cloning the repository: `git clone https://github.com/PeizhiShi/MsvNet.git`.
-3. Download the benchmark multi-feature [dataset](https://1drv.ms/u/s!At5UoWCCWHUKafomIKnOJnsl0Dg?e=lbK8iw), and put them in the folder `data\`.
-4. Download the pretrained optimal MsvNet and FeatureNet [models](https://1drv.ms/u/s!At5UoWCCWHUKaM5mfNTkvL1tl_c?e=OHVMBR), and put them int the folder `models\`. These models could produce the multi-feature recognition results reported in the paper.
-5. Run `python multi_test.py` to test the performances of the MsvNet and FeatureNet for multi-feature recognition. Please note that the multi-feature recognition part of the FeatureNet is only a reimplemented version. Watershed algorithm with the default setting is employed. Detailed information about the FeatureNet can be found from their [original paper](https://doi.org/10.1016/j.cad.2018.03.006).
+1. Get the MsvNet source code by cloning the repository: `git clone https://github.com/PeizhiShi/MsvNet.git`.
+2. Download the benchmark multi-feature [dataset](https://1drv.ms/u/s!At5UoWCCWHUKafomIKnOJnsl0Dg?e=lbK8iw), and put them in the folder `data\`.
+3. Download the pretrained optimal MsvNet and FeatureNet [models](https://1drv.ms/u/s!At5UoWCCWHUKaM5mfNTkvL1tl_c?e=OHVMBR), and put them int the folder `models\`. These models could produce the multi-feature recognition results reported in the paper.
+4. Run `python multi_test.py` to test the performances of the MsvNet and FeatureNet for multi-feature recognition. Please note that the multi-feature recognition part of the FeatureNet is only a reimplemented version. Watershed algorithm with the default setting is employed. Detailed information about the FeatureNet can be found from their [original paper](https://doi.org/10.1016/j.cad.2018.03.006).
 
 If you have any questions about the code, please feel free to contact me (p.shi@hud.ac.uk).
