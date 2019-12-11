@@ -32,7 +32,7 @@ All the experiments mentioned in our paper are conducted on Ubuntu 18.04 under t
 ### Single feature recognition
 
 1. Get the MsvNet source code by cloning the repository: `git clone https://github.com/PeizhiShi/MsvNet.git`.
-2. Download the FeatureNet [dataset](https://github.com/madlabub/Machining-feature-dataset), convert them into voxel models via [binvox](https://www.patrickmin.com/binvox/), and put them in the folder `data/64/`. `64` refers to the resolution of the voxel models.
+2. Download the FeatureNet [dataset](https://github.com/madlabub/Machining-feature-dataset), convert them into voxel models via [binvox](https://www.patrickmin.com/binvox/), and put all the files in the folder `data/64/`. `64` refers to the resolution of the voxel models. The filename format is `label_index.binvox`.
 3. Run `python single_train.py` to train the neural network. Please note that data augmentation is employed in this experiment. Thus, the training accuracy is lower than the val/test accuracy.
 
 
