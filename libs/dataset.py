@@ -271,8 +271,7 @@ def createPartition(resolution = 16, num_train = 30, num_val_test = 30):
     with open(os.devnull, 'w') as devnull:
         for filename in sorted(Path('data/' + str(resolution) + '/').glob('*.binvox')):
             namelist = os.path.basename(filename).split('_')
-            if len(namelist) != 3:
-                continue
+            
             
             label = int(namelist[0])
                 
