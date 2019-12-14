@@ -534,11 +534,7 @@ def get_lvec(labels):
         
 def eval_metric(pre,trul,tp):
     precision = tp/pre
-    precision[np.isnan(precision)]=1
-    precision[precision>1]=1
     
     recall = tp/trul
-    recall[np.isnan(recall)] = 1
-    recall[recall>1] = 1
     
     return precision, recall
