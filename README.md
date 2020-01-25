@@ -11,14 +11,14 @@ This repository provides the source codes of the MsvNet for both single and mult
 
 If this project is useful to you, please consider citing our paper:
 
-  @article{shi2020novel,
-    title={A novel learning-based feature recognition method using multiple sectional view representation},
-    author={Shi, Peizhi and Qi, Qunfen and Qin, Yuchu and Scott, Paul J and Jiang, Xiangqian},
-    journal={Journal of Intelligent Manufacturing},
-    pages={1--19},
-    year={2020},
-    publisher={Springer}
-  }
+    @article{shi2020novel,
+      title={A novel learning-based feature recognition method using multiple sectional view representation},
+      author={Shi, Peizhi and Qi, Qunfen and Qin, Yuchu and Scott, Paul J and Jiang, Xiangqian},
+      journal={Journal of Intelligent Manufacturing},
+      pages={1--19},
+      year={2020},
+      publisher={Springer}
+    }
 
 ### Experimental configuration
 
