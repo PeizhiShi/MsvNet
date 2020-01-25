@@ -9,6 +9,16 @@ The MsvNet is a novel learning-based feature recognition method using multiple s
 
 This repository provides the source codes of the MsvNet for both single and multi-feature recognition, a reimplemented version of the FeatureNet for multi-feature recognition, and a benchmark dataset which contains 1000 3D models with multiple features.
 
+If this project is useful to you, please consider citing our paper:
+
+`@article{shi2020novel,
+  title={A novel learning-based feature recognition method using multiple sectional view representation},
+  author={Shi, Peizhi and Qi, Qunfen and Qin, Yuchu and Scott, Paul J and Jiang, Xiangqian},
+  journal={Journal of Intelligent Manufacturing},
+  pages={1--19},
+  year={2020},
+  publisher={Springer}
+}`
 
 ### Experimental configuration
 
@@ -47,7 +57,7 @@ All the experiments mentioned in our paper are conducted on Ubuntu 18.04 under t
 
 1. Get the MsvNet source code by cloning the repository: `git clone https://github.com/PeizhiShi/MsvNet.git`.
 2. Download the benchmark multi-feature [dataset](https://1drv.ms/u/s!At5UoWCCWHUKafomIKnOJnsl0Dg?e=lbK8iw), and put them in the folder `data/`.
-3. Download the pretrained optimal MsvNet and FeatureNet [models](https://1drv.ms/u/s!At5UoWCCWHUKaM5mfNTkvL1tl_c?e=OHVMBR), and put them int the folder `models/`. These models could produce the multi-feature recognition results reported in the paper.
+3. Download the pretrained optimal MsvNet and FeatureNet [models](https://1drv.ms/u/s!At5UoWCCWHUKaM5mfNTkvL1tl_c?e=OHVMBR), and put them int the folder `models/`. These models are trained under the optimal settings (instead of near-optimal settings) mentioned in our paper, which could produce the multi-feature recognition results reported in the paper. 
 4. Run `python multi_test.py` to test the performances of the MsvNet and FeatureNet for multi-feature recognition. Please note that the multi-feature recognition part of the FeatureNet is only a reimplemented version. Watershed algorithm with the default setting is employed. Detailed information about the FeatureNet can be found from their [original paper](https://doi.org/10.1016/j.cad.2018.03.006).
 
 If you have any questions about the code, please feel free to contact me (p.shi@hud.ac.uk).
