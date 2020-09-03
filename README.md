@@ -15,10 +15,13 @@ If this project is useful to you, please consider citing our paper:
       title={A novel learning-based feature recognition method using multiple sectional view representation},
       author={Shi, Peizhi and Qi, Qunfen and Qin, Yuchu and Scott, Paul J and Jiang, Xiangqian},
       journal={Journal of Intelligent Manufacturing},
-      pages={1--19},
+      volume={31},
+      number={5},
+      pages={1291--1309},
       year={2020},
       publisher={Springer}
     }
+    
   
 This is an open access peer-reviewed paper, which is available [online](https://link.springer.com/article/10.1007/s10845-020-01533-w).
 
