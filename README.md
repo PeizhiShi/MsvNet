@@ -1,4 +1,5 @@
 ## MsvNet
+*Update (15/10/2020): Please check out our recent work named SsdNet ([paper](https://doi.org/10.1109/TII.2020.3030620), [code](https://github.com/PeizhiShi/SsdNet)), which yields better results than the MsvNet.
 Created by Peizhi Shi at University of Huddersfield
 
 Acknowledgements: We would like to thank Zhibo Zhang for providing the dataset and source code of FeatureNet on Github. 
