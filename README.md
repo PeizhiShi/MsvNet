@@ -23,7 +23,7 @@ If this project is useful to you, please consider citing our paper:
     }
     
   
-This is an open access peer-reviewed paper, which is available [online](https://link.springer.com/article/10.1007/s10845-020-01533-w).
+This is a peer-reviewed paper, which is available [online](https://link.springer.com/article/10.1007/s10845-020-01533-w).
 
 ### Experimental configuration
 
