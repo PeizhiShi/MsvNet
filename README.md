@@ -1,4 +1,9 @@
 ## MsvNet
+
+<div class="text-purple">
+  This text is purple, <a href="#" class="text-inherit">including the link</a>
+</div>
+
 *Update (15/10/2020): Please check out our recent work published on IEEE TII ([paper](https://doi.org/10.1109/TII.2020.3030620), [code](https://github.com/PeizhiShi/SsdNet)), which yields better results than the MsvNet.
 
 Created by Peizhi Shi at University of Huddersfield
