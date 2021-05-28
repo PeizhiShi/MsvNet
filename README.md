@@ -28,6 +28,8 @@ If this project is useful to you, please consider citing our paper:
   
 This is a peer-reviewed paper, which is available [online](https://link.springer.com/article/10.1007/s10845-020-01533-w).
 
+You will NOT utilise the code for military, nuclear, missile, animal slaughter, meat production, weaponry end uses or conduct any other activities where human/animal life or property may be at stake.
+
 ### Experimental configuration
 
 1. CUDA (10.0.130)
