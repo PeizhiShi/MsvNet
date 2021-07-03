@@ -6,8 +6,10 @@ Created by Peizhi Shi at University of Huddersfield
 
 Acknowledgements: We would like to thank Zhibo Zhang for providing the dataset and source code of FeatureNet on Github. 
 
-**You will NOT utilise the code for military, nuclear, missile, animal slaughter, meat production, weaponry end uses or conduct any other activities involving the code where human/animal life or property may be at stake.**
-
+```diff
+- You will NOT utilise the code for military, nuclear, missile, animal slaughter, meat production, weaponry end uses 
+- or conduct any other activities involving the code where human/animal life or property may be at stake.
+```
 
 ### Introduction
 
