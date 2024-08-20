@@ -6,7 +6,7 @@ Created by Peizhi Shi at University of Huddersfield
 
 Acknowledgements: We would like to thank Zhibo Zhang for providing the dataset and source code of FeatureNet on Github. 
 
-**You will NOT utilise the code for military, nuclear, missile, animal slaughter, meat production, weaponry end uses or conduct any other activities involving the code where human/animal life or property may be at stake.**
+**Please note that the code is NOT intended for use in military, nuclear, missile, weaponry applications, or in activities involving animal slaughter, meat production, or any other scenarios where human or animal life, or property, could be at risk. We kindly ask you to refrain from applying the code in such contexts.**
 
 
 ### Introduction
@@ -71,4 +71,4 @@ All the experiments mentioned in our paper are conducted on Ubuntu 18.04 under t
 3. Download the pretrained optimal MsvNet and FeatureNet [models](https://1drv.ms/u/s!At5UoWCCWHUKaM5mfNTkvL1tl_c?e=OHVMBR), and put them int the folder `models/`. These models are trained under the optimal settings (instead of near-optimal settings) mentioned in our paper, which could produce the multi-feature recognition results reported in the paper. 
 4. Run `python multi_test.py` to test the performances of the MsvNet and FeatureNet for multi-feature recognition. Please note that the multi-feature recognition part of the FeatureNet is only a reimplemented version. Watershed algorithm with the default setting is employed. Detailed information about the FeatureNet can be found from their [original paper](https://doi.org/10.1016/j.cad.2018.03.006).
 
-If you have any questions about the code, please feel free to contact me (p.shi@hud.ac.uk).
+If you have any questions about the code, please feel free to contact me (p.shi@leeds.ac.uk).
